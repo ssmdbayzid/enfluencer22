@@ -8,7 +8,8 @@ main{
 }
 /* ------------Common Style End----------- */
 .heading{
-    width: 1188px;
+    margin-left: 120px;
+    justify-content: center;
 }
 /* ...............Nav Style Start------------ */
 .nav-bar{
@@ -32,4 +33,20 @@ ul li a{
     
 }
 /* ...............Nav Style end------------ */
-main-display-product
+.main-display{
+    display: flex;
+    align-items: center;
+}
+.display{
+    width: 50%;
+    margin-left: 10px;
+    padding: 2px;
+}
+.product{
+    margin: 0px 132px;
+
+}
+.display img{
+    width: 70%;
+    align-items: center;
+}
