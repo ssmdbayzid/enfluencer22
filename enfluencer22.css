@@ -145,3 +145,20 @@ h5{
     color: #ffffff;
     text-decoration: none;
 }
+footer{
+    margin-top: 100px;
+    background-color: #0A0826;
+    padding: 50px 0px;
+}
+footer h1{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 24px;
+}
+footer p{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
