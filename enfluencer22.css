@@ -4,12 +4,14 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    background-color: #ffffff;
 }
 /* ------------Common Style End----------- */
 .heading{
     margin-left: 120px;
     justify-content: center;
+    background-color: #ffffff;
 }
 /* ...............Nav Style Start------------ */
 .nav-bar{
@@ -30,6 +32,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color:#3A3A3A;
+    font-weight: 600;
     
 }
 /* ...............Nav Style end------------ */
@@ -44,10 +47,6 @@ ul li a{
     margin-left: 10px;
     padding: 2px;
 }
-.product{
-    margin: 0px 132px;
-
-}
 .display img{
     width: 70%;
     align-items: center;
@@ -59,7 +58,7 @@ ul li a{
     color: #ffffff;
     border-radius: 20px;
     font-size: 16px;
-    padding: 5px 24px;
+    padding: 8px 24px;
     text-decoration: none;
 }
 /* ---------------diaplay product style end---------- */
@@ -70,14 +69,79 @@ ul li a{
     padding: 36px 62px;
     justify-content: space-between;
     display: flex;
-    border-block-start: 1px solid grey;
-    border-block-end: 1px solid grey;
+    border-block-start: 1px solid #ededed;
+    border-block-end: 1px solid #ededed;
     margin-bottom: 100px;
+    background-color: #ffffff;
 }
 .sponsored-by img{
     width: 10%;
 }
+/* ----------sponsored style end--------- */
+.product-collection{
+    width: 1047px;
+    margin: 0 auto;
+}
 .section-tittle{
     font-size: 28px;
     text-align: center;
+    
+}
+/* ------------------product collection start---------- */
+.collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.product{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px lightgrey;
+    margin: 15px;
+    padding: 14px;
+    border-radius: 5px;
+}
+.product img{
+    width: 100%;
+}
+.product h1{
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.product h4{
+    margin: 6px 0px;
+}
+.rating i{
+    font-size: 14px;
+    color: goldenrod;
+}
+.product p{
+    font-size: 14px;
+    font-weight: 700;
+    color: gray;
+}
+h5{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    color: brown;
+}
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+    margin: 0px 165px;
+}
+.feature-product img{
+    width: 440px;
+    height: 270px;
+}
+.feature-info{
+    margin-left: 96px;
+}
+#join{
+    padding: 10px 30px;
+    background-color: brown;
+    color: #ffffff;
+    text-decoration: none;
 }
