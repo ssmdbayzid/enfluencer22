@@ -1,6 +1,7 @@
 /* -------------Common Style Style----------------- */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px ;
 }
 main{
     display: flex;
@@ -44,13 +45,17 @@ ul li a{
     background-position: right;
     margin-top: 100px;
     align-items: center;
-
 }
 .display{
-    width: 50%;
     margin-left: 10px;
     padding: 2px;
     /* transition: transform 1s width 1s height 1s; */
+}
+.display h1{
+    font-size: 52px;
+}
+.display p{
+    font-size: 24px;
 }
 
 .display-product:hover {
@@ -138,7 +143,7 @@ h4{
     font-weight: 700;
     color: brown;
     text-decoration: none;
-    margin-left: 1070px;
+    /* margin-left: 1070px; */
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -147,11 +152,12 @@ h4{
     justify-content: center;
     align-items: center;
     width: 1110px;
-    margin: 0px 165px;
+    /* margin: 0px 165px; */
+    margin: 0px auto;
 }
-.feature-product img{
-    width: 440px;
-    height: 270px;
+.section-tittle{
+    text-align: right;
+    margin-right: 150px;
 }
 .feature-info{
     margin-left: 96px;
@@ -179,6 +185,107 @@ footer p{
     margin-bottom: 3px;
     font-size: 14px;
 }
+.social-media{
+    margin: 0 auto;
+    width: 176px;
+    height: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+.sponsored-by img{
+    width: 10%;
+}
 /* -------------Footer Style Eng----------- */
 
-/* ----------start media quary---- */
+/* ---------------------------------------------start media quary---------------------------------------
+--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------Mobile Devices--- */
+@media only screen and  (max-width: 688px) {
+    .heading{
+        margin: auto;
+    }
+    .heading{
+        margin-left: 0;
+        text-align: left;
+        width: 100%;
+    }
+    .nav-bar{
+        width: auto;
+        display: block;
+
+    }
+    .nav-menu{
+        display: none;
+    }
+    .main-display{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-bottom: 20px;
+        /* background-image: 70% url(images/Circle-design.svg);
+        background-repeat: no-repeat;
+        background-position: top;   */
+        margin-top: 10px;
+    }
+    .display{
+        margin: 0px;
+        text-align: center;
+    }
+    .display-product{
+        margin: 0 auto;
+        width: 50%;
+        padding-block-start: 60px;
+        transition: transform 1s;
+        /* background-image: url(images/Circle-design.svg);
+        background-repeat: no-repeat;
+        background-position: top;   */
+    }
+    .display-product img{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .display h1{
+        font-size: 30px;
+    }
+    .display p{
+        font-size: 20px;
+    }
+    .product-collection{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .collection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    h4{
+        margin: 0px;
+        margin-right: 20px;
+        text-align: right;
+        margin-top: 0px;
+
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        /* padding: 10px; */
+    }
+    .feature-product{
+        padding: 10px;
+    }
+    .feature-product img{
+        width: 100%;
+    }
+    .feature-info{
+        margin: 0 auto;
+
+    }
+}
