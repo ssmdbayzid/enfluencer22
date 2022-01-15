@@ -17,6 +17,7 @@ main{
 /* ...............Nav Style Start------------ */
 .nav-bar{
     display: flex;
+    margin: auto;
     justify-content: space-between;
     width: 1188px;
     align-items: center;
@@ -38,6 +39,7 @@ ul li a{
 .main-display{
     display: flex;
     align-items: center;
+    margin: auto;
     margin-bottom: 69px;
     width: 1188px;
     background-image: url(images/Circle-design.svg);
@@ -101,7 +103,7 @@ ul li a{
     width: 1047px;
     margin: 0 auto;
 }
-.section-tittle{
+.tittle{
     font-size: 28px;
     text-align: center;
     
@@ -226,9 +228,6 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin-bottom: 20px;
-        /* background-image: 70% url(images/Circle-design.svg);
-        background-repeat: no-repeat;
-        background-position: top;   */
         margin-top: 10px;
     }
     .display{
@@ -240,13 +239,27 @@ footer p{
         width: 50%;
         padding-block-start: 60px;
         transition: transform 1s;
-        /* background-image: url(images/Circle-design.svg);
-        background-repeat: no-repeat;
-        background-position: top;   */
     }
     .display-product img{
         width: 100%;
         padding-bottom: 50px;
+    }
+    .display-product:hover{
+        transform: scale(1.1);
+    }
+
+    .sponsored-by{
+        margin: 0 auto;
+        width: 70%;
+         height: 40px;
+        /* padding: 36px 62px; */
+        justify-content: space-between;
+        display: flex;
+        padding:  50px 30px;
+        margin-bottom: 10px;
+    }
+    .sponsored-by img{
+        width: 10%;
     }
     .display h1{
         font-size: 30px;
@@ -263,12 +276,15 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
     }
+    .section-tittle{
+        text-align: right;
+        margin-right: 10px;
+    }
     h4{
         margin: 0px;
         margin-right: 20px;
         text-align: right;
         margin-top: 0px;
-
     }
     .feature{
         flex-direction: column;
@@ -278,14 +294,15 @@ footer p{
         margin: 0 auto;
         /* padding: 10px; */
     }
-    .feature-product{
-        padding: 10px;
-    }
     .feature-product img{
         width: 100%;
     }
-    .feature-info{
-        margin: 0 auto;
-
+    .feature-product, .feature-info{
+        padding: 10px;
+        margin: auto;
     }
+    .feature-info p{
+        margin-bottom: 50px;
+    }
+
 }
