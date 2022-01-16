@@ -2,6 +2,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px ;
+    font-weight: 500;
 }
 main{
     display: flex;
@@ -58,6 +59,7 @@ ul li a{
 }
 .display p{
     font-size: 24px;
+    font-weight: 600;
 }
 
 .display-product:hover {
@@ -151,15 +153,22 @@ h4{
 }
 .feature{
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 1110px;
     /* margin: 0px 165px; */
-    margin: 0px auto;
+    margin: auto;
 }
-.section-tittle{
+.feature h1{
+    font-size: 35px;
+}
+.feature p{
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+}
+section h4{
     text-align: right;
-    margin-right: 150px;
+    margin-right: 200px;
 }
 .feature-info{
     margin-left: 96px;
@@ -169,6 +178,7 @@ h4{
     background-color: brown;
     color: #ffffff;
     text-decoration: none;
+    margin-bottom: 100px;
 }
 footer{
     margin-top: 100px;
@@ -186,6 +196,7 @@ footer p{
     text-align: center;
     margin-bottom: 3px;
     font-size: 14px;
+    color: gray;
 }
 .social-media{
     margin: 0 auto;
