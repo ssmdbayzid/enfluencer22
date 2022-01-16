@@ -84,8 +84,7 @@ ul li a{
 }
 /* ---------------diaplay product style end---------- */
 .sponsored-by{
-    margin: 0 auto;
-    width: 986px;
+    margin: auto;
     height: 40px;
     padding: 36px 62px;
     justify-content: space-between;
@@ -194,9 +193,9 @@ footer p{
     justify-content: space-between;
     display: flex;
 }
-.sponsored-by img{
+/* .sponsored-by img{
     width: 10%;
-}
+} */
 /* -------------Footer Style Eng----------- */
 
 /* ---------------------------------------------start media quary---------------------------------------
@@ -206,6 +205,9 @@ footer p{
 
 /* --------------Mobile Devices--- */
 @media only screen and  (max-width: 688px) {
+    .main{
+        width: 100%;
+    }
     .heading{
         margin: auto;
     }
@@ -227,7 +229,6 @@ footer p{
         display: grid;
         width: 100%;
         background-image: none;
-        top: 200;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin-bottom: 20px;
@@ -259,14 +260,14 @@ footer p{
 
 
     .sponsored-by{
-        margin: 0 auto;
-        width: 100%;
+        margin:auto;
+        width: 90%;
         height: 40px;
         justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
+        padding: 30px 0px;
         flex-direction: column;
-        padding:  50px 30px;
         margin-bottom: 10px;
     }
     .sponsored-by img{
@@ -290,12 +291,11 @@ footer p{
     }
     .section-tittle{
         text-align: right;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     h4{
         margin: 0px;
         margin-right: 20px;
-        text-align: right;
         margin-top: 0px;
     }
     .feature{
@@ -303,22 +303,177 @@ footer p{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 0 auto;
+        margin: auto;
         /* padding: 10px; */
     }
     .feature-product img{
         width: 100%;
     }
     .feature-product, .feature-info{
-        padding: 10px;
         margin: auto;
-        width: 80%;
-    }
-    .feature-info{
-        text-align: center;
-    }
-    #join{
-        margin: auto;
+        width: 90%;
     }
 
+    .feature-info{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .feature-info p{
+        margin-bottom: 80px;
+    }
+    #join{
+        padding: 10px 30px;
+        background-color: brown;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+    }
 }
+
+/* --------------Tab Devices----------------
+----------------------------------------------
+--------------------------------------------- */
+@media only screen and  (min-width: 688.1px) and (max-width:992px) {
+    .main{
+        width: 100%;
+    }
+    .heading{
+        margin: auto;
+    }
+    .heading{
+        margin-left: 0;
+        text-align: left;
+        width: 100%;
+    }
+    .nav-bar{
+        width: auto;
+        margin-left: 10px;
+
+    }
+    .main-display{
+        display: grid;
+        width: 100%;
+        background-image: none;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .display{
+        margin: auto;
+        text-align: center;
+        width: 80%;
+    }
+    .display h1{
+        font-size: 55px;
+    }
+    .display p{
+        font-size: 30px;
+    }
+    .display-product{
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 100px;
+        padding-block-start: 60px;
+        background-image: url(/images/Circle-design.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transition: transform 1s;
+    }
+    .display-product:hover img{
+        transform: scale(1.1);
+    }
+
+    .display-product img{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+
+    .sponsored-by{
+        margin:auto;
+        width: 90%;
+        height: 40px;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .sponsored-by img{
+        width: 13%;
+        margin-right: 10px;
+    }
+    .tittle{
+        font-size: 40px;
+    }
+
+    .product-collection{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .section-tittle{
+        text-align: right;
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+    h4{
+        margin: 0px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        /* padding: 10px; */
+    }
+    .feature-product img{
+        width: 100%;
+    }
+    .feature-product, .feature-info{
+        margin: auto;
+        width: 90%;
+    }
+
+    .feature-info{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .feature-info h1{
+        font-size: 50px;
+    }
+    .feature-info p{
+        margin-bottom: 80px;
+        font-size: 30px;
+    }
+    #join{
+        padding: 10px 30px;
+        background-color: brown;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 40px;
+    }
+}
+/* 
+@media only screen and (min-width: 688.1px) and (max-width: 992px)
+.sponsored-by {
+    margin: auto;
+    width: 88%;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0px;
+    /* flex-direction: column;
+    margin-bottom: 10px;
+ */
