@@ -217,6 +217,7 @@ footer p{
     .nav-bar{
         width: auto;
         display: block;
+        margin-left: 10px;
 
     }
     .nav-menu{
@@ -225,6 +226,14 @@ footer p{
     .main-display{
         display: grid;
         width: 100%;
+        /* background-image: none; */
+        background-image: url(images/Circle-design.svg);
+        background-position-y: 30px;
+        background-repeat: no-repeat;
+        background-position-y: 289px;
+        background-position-x: -59px;
+        /* background-position: related; */
+        top: 200;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         margin-bottom: 20px;
@@ -233,6 +242,9 @@ footer p{
     .display{
         margin: 0px;
         text-align: center;
+    }
+.display-product:hover img{
+        transform: scale(1.1);
     }
     .display-product{
         margin: 0 auto;
@@ -244,22 +256,22 @@ footer p{
         width: 100%;
         padding-bottom: 50px;
     }
-    .display-product:hover{
-        transform: scale(1.1);
-    }
+
 
     .sponsored-by{
         margin: 0 auto;
-        width: 70%;
-         height: 40px;
-        /* padding: 36px 62px; */
+        width: 100%;
+        height: 40px;
         justify-content: space-between;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         padding:  50px 30px;
         margin-bottom: 10px;
     }
     .sponsored-by img{
-        width: 10%;
+        width: 15%;
+        margin-right: 10px;
     }
     .display h1{
         font-size: 30px;
@@ -301,8 +313,13 @@ footer p{
         padding: 10px;
         margin: auto;
     }
+    .feature-info h1{
+        /* margin-bottom: 50px; */
+        text-align: center;
+    }
     .feature-info p{
         margin-bottom: 50px;
+        text-align: center;
     }
 
 }
