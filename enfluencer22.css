@@ -226,13 +226,7 @@ footer p{
     .main-display{
         display: grid;
         width: 100%;
-        /* background-image: none; */
-        background-image: url(images/Circle-design.svg);
-        background-position-y: 30px;
-        background-repeat: no-repeat;
-        background-position-y: 289px;
-        background-position-x: -59px;
-        /* background-position: related; */
+        background-image: none;
         top: 200;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -240,18 +234,24 @@ footer p{
         margin-top: 10px;
     }
     .display{
-        margin: 0px;
+        margin: auto;
         text-align: center;
-    }
-.display-product:hover img{
-        transform: scale(1.1);
+        width: 90%;
     }
     .display-product{
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
+        margin-top: 100px;
         padding-block-start: 60px;
+        background-image: url(/images/Circle-design.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
         transition: transform 1s;
     }
+    .display-product:hover img{
+        transform: scale(1.1);
+    }
+
     .display-product img{
         width: 100%;
         padding-bottom: 50px;
@@ -312,14 +312,13 @@ footer p{
     .feature-product, .feature-info{
         padding: 10px;
         margin: auto;
+        width: 80%;
     }
-    .feature-info h1{
-        /* margin-bottom: 50px; */
+    .feature-info{
         text-align: center;
     }
-    .feature-info p{
-        margin-bottom: 50px;
-        text-align: center;
+    #join{
+        margin: auto;
     }
 
 }
